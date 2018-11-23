@@ -17,7 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   libpcre3 fonts-freefont-ttf fbset \
   && apt-get clean \
   && apt-get -y install omxplayer \
-  build-essential python3-dev \
+  build-essential man python3-dev \
   python3-pip \
   ntp \
   ifmetric

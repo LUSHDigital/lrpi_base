@@ -1,7 +1,7 @@
 version: '3'
 services:
   mw_rclone:
-    build: ../mw_rclone/
+    build: ../../lrpi_rclone/
     volumes:
        - /media/usb/rclone/:/media/usb/rclone
   # mw_play:
