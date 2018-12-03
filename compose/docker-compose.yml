@@ -3,11 +3,9 @@ services:
   mw_rclone:
     build: ../../lrpi_rclone/
     volumes:
-       - /media/usb/rclone/:/media/usb/rclone
-  # mw_play:
-    #build: ../mw_play/docker/
-    # volumes:
-    #    - /media/usb:/opt/usb/tracks
-    #    - /opt/vc
-    # command: python3 omx-player-service.py
-# volumes:
+       - /media/usb/:/media/usb/
+  mw_play:
+    build: ../mw_play/docker/
+    volumes:
+       - /media/usb/:/media/usb/
+    command: python3 omx-player-service.py

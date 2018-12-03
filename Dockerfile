@@ -1,6 +1,6 @@
 FROM resin/rpi-raspbian:stretch
 
-# sample build command: sudo docker build -t mw_rpi_base .
+# sample build command: sudo docker build -t lrpi_rpi_base:local .
 # get resin.io stretch raspbian image. Has QEMU built in
 # mw_rpi_base dockerfile
 # Resin.io (balena) base image
@@ -20,6 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
   build-essential man python3-dev \
   python3-pip \
   ntp \
-  ifmetric
+  ifmetric \
+  git
 
 RUN [ "cross-build-end" ]
