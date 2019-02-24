@@ -1,6 +1,6 @@
 # lushroom-base Dockerfile
 
-FROM resin/rpi-raspbian:stretch
+FROM balenalib/raspberrypi3-debian:stretch
 
 ENTRYPOINT []
 
@@ -27,3 +27,4 @@ RUN pip3 install pillow
 RUN pip3 install rdflib
 
 RUN [ "cross-build-end" ]
+
