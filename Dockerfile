@@ -1,6 +1,6 @@
 # lushroom-base Dockerfile
 
-FROM balenalib/raspberrypi3-debian:stretch
+FROM balenalib/raspberrypi3:stretch
 
 ENTRYPOINT []
 
